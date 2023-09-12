@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&family=Inter:wght@400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+  <script>    
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'Inter' : ['Inter', 'sans-serif']
+          },
+          colors: {
+              softOrange: 'hsl(35, 77%, 62%)',
+              softRed: 'hsl(5, 85%, 63%)',
+              offWhite: 'hsl(36, 100%, 99%)',
+              grayishBlue: 'hsl(233, 8%, 79%)',
+              darkGrayishBlue: 'hsl(236, 13%, 42%)',
+              veryDarkBlue: 'hsl(240, 100%, 5%)'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-Inter">
+
+  <head>
+    <nav class="flex justify-between px-4 items-center my-5">
+      <div class="logo">
+        <img src="assets/images/logo.svg" alt="">
+      </div>
+      <div class="navMenu hidden md:block">
+        <ul class='flex flex-row space-x-10'>
+          <li><a href="">Home</a></li>
+          <li><a href="">Popular</a></li>
+          <li><a href="">New</a></li>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Categories</a></li>
+        </ul>
+      </div>
+      <div class="hamburger md:hidden">
+        <img src="assets/images/icon-menu.svg" alt="">
+      </div>
+    </nav>
+  </head>
+
+  <main class="mb-60">
+    <section id="hero">
+      <div class="heroWrapper px-4">
+        <div class="left flex flex-col space-y-6">
+          <img src="assets/images/image-web-3-mobile.jpg" alt="">
+          <h1 class="text-4xl font-black">The Bright Future of Web 3.0?</h1>
+          <div>
+            <p class="text-darkGrayishBlue">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?
+            </p>
+            <div class="mt-10"><a href="#" class="bg-softRed text-white px-8 py-3 tracking-[.30rem]">READ MORE</a>  </div>   </div>
+        <div class="right">
+          <div class="bg-veryDarkBlue px-4">
+            <h1 class="text-3xl text-softOrange font-semibold py-6">
+              New
+            </h1>
+            <div class="flex flex-col space-y-10">
+              <div class="">
+                <h1 class="text-lg font-semibold text-white pb-1">
+                  Hydrogen VS Electric Cards
+                </h1>
+                <p class="text-grayishBlue pb-6">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+                <hr>
+              </div>
+              <div>
+                <h1 class="text-lg font-semibold text-white pb-3">
+                  The Downsides of AI Artistry
+                </h1>
+                <p class="text-grayishBlue pb-6">
+                  What are the possible adverse effects of on-demand AI image generation?
+                </p>
+                <hr>
+              </div>
+              <div>
+                <h1 class="text-lg font-semibold text-white pb-3">
+                  Is VC Funding Drying Up?
+                </h1>
+                <p class="text-grayishBlue pb-8">
+                  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities.
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

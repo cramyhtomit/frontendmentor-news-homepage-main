@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+hr {
+  border: solid 1px hsla(233, 8%, 79%, 0.3);
+}
